@@ -21,7 +21,7 @@ const About = () => {
             <img
               src="/lovable-uploads/a600363c-0bc6-42e6-abd7-9bf013bd81e9.png"
               alt="Anticyclone performing"
-              className="rounded-lg shadow-glow w-full h-96 object-cover"
+              className="rounded-lg shadow-glow w-full h-[28rem] object-cover"
             />
           </div>
           <div className="space-y-6">
