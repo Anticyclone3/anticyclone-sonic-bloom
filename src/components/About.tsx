@@ -37,7 +37,15 @@ const About = () => {
             <p className="text-foreground/80 text-lg leading-relaxed">
               With breakthrough single "Pendulum" gaining international recognition 
               through British compilation record label LW, Anticyclone has established 
-              a unique position in the global electronic music landscape.
+              a unique position in the global electronic music landscape. In 2023, 
+              the artist received recognition from renowned DJ Sam Feldt, marking 
+              a significant milestone in their career.
+            </p>
+            <p className="text-foreground/80 text-lg leading-relaxed">
+              The discography includes hit tracks like "Crazy", "Pendulum", "Pulses", 
+              "Tribal", and "Party Anthem for India Dil Toda", alongside SoundCloud 
+              releases "She Was Stranger" and "Save", showcasing the diverse range 
+              and evolution of Anticyclone's sound.
             </p>
           </div>
         </div>
