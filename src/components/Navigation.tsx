@@ -10,6 +10,7 @@ const Navigation = () => {
     { name: "About", href: "#about" },
     { name: "Music", href: "#music" },
     { name: "Live Shows", href: "#shows" },
+    { name: "Fan Feedback", href: "/feedback" },
     { name: "Contact", href: "#contact" },
   ];
 
