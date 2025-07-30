@@ -8,35 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 225 25% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 225 25% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 280 100% 70%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 198 93% 60%;
+    --accent-foreground: 222 84% 4.9%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 280 100% 70%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* EDM Theme Colors */
+    --neon-blue: 198 93% 60%;
+    --neon-purple: 280 100% 70%;
+    --neon-pink: 330 85% 65%;
+    --electric-cyan: 180 100% 50%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 70%), hsl(198 93% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 100% 70% / 0.8), hsl(198 93% 60% / 0.6));
+    --gradient-card: linear-gradient(145deg, hsl(225 25% 8% / 0.8), hsl(217 33% 17% / 0.6));
+    
+    /* Shadows */
+    --shadow-neon: 0 0 30px hsl(280 100% 70% / 0.3);
+    --shadow-glow: 0 10px 40px hsl(198 93% 60% / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +119,21 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at 20% 80%, hsl(280 100% 70% / 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, hsl(198 93% 60% / 0.1) 0%, transparent 50%);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { 
+    box-shadow: 0 0 20px hsl(280 100% 70% / 0.3);
+  }
+  to { 
+    box-shadow: 0 0 30px hsl(280 100% 70% / 0.6), 0 0 40px hsl(198 93% 60% / 0.3);
   }
 }
