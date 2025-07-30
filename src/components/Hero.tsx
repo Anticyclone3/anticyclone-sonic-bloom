@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         {/* Artist Image */}
-        <div className="mb-8">
+        <div className="mb-8 mt-8">
           <img
             src="/lovable-uploads/b795b2d8-8207-4cff-b46b-f174a0fb3fb6.png"
             alt="Anticyclone"
