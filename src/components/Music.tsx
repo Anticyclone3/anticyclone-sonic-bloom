@@ -91,7 +91,11 @@ const Music = () => {
                       <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                       Play Now
                     </Button>
-                    <Button variant="outline" className="w-full group">
+                    <Button 
+                      variant="outline" 
+                      className="w-full group"
+                      onClick={() => window.open('https://open.spotify.com/track/7eNEXLr2ogr5gwlcKgWm3i?si=1cd4feed75e4433b', '_blank')}
+                    >
                       <ExternalLink className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                       Open in Spotify
                     </Button>
