@@ -2,6 +2,10 @@
 
 ## Project info
 
+https://anticyclone.lovable.app/
+
+Check out website
+
 **URL**: https://lovable.dev/projects/d5649573-d8d7-4987-b3ae-2ec21db8ff80
 
 ## How can I edit this code?
